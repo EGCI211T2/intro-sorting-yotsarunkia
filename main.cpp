@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+#include "sorting.h"
 using namespace std;
 
 int main(int argc, char * argv[]) {
@@ -23,7 +24,7 @@ int main(int argc, char * argv[]) {
     cout<<"Before sorting:";
     display(a,N);
     
-    sort(a,N);
+    selectionsort(a,N);
     cout<<"After sorting:";
     display(a,N);
     
