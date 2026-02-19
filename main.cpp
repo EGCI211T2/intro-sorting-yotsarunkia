@@ -27,11 +27,7 @@ int main(int argc, char *argv[])
   {
     a[i] = atoi(argv[i + 1]);
   }
-  cout << "Before sorting:";
-  display(a, N);
-
   sort(a, N);
-  cout << "After sorting:";
   display(a, N);
 
   return 0;
