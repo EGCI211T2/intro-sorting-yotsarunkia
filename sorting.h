@@ -10,23 +10,21 @@ void swap(int &a, int &b)
     a = b;
     b = temp;
 }
-void sort(int *a,int N)
+void sort(int a[],int N)
 {
     int i,j;
-    for (i=0; i>0 ; i++)
+    for (i=0; i < N-1 ; i++)
     {
         int sorted = 0;
-        for (j=0; j < i ; j++)
+        for (j=0; j < N-i-1 ; j++)
         {
-            if(a[j] < a[j+1])
+            if(a[j] > a[j+1])
             {
                 swap(a[j],a[j+1]);
+                sorted = 1;
             }
-            display(a,N);
         }
         if (sorted ==0) break;
-        cout<<endl;
-        display(a,N);
     }
 }
 void display(int *a,int N)
@@ -48,7 +46,6 @@ void selectionsort(int *a,int N)
         swap(a[i],a[min]);
         
     }
-    display(a,N);
 }
 void insertionsort(int *a,int N)
 {
