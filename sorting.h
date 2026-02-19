@@ -18,7 +18,7 @@ void sort(int a[],int N)
         int sorted = 0;
         for (j=0; j < N-i-1 ; j++)
         {
-            if(a[j] < a[j+1])
+            if(a[j] > a[j+1])
             {
                 swap(a[j],a[j+1]);
                 sorted = 1;
