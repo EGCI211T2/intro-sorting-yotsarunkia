@@ -15,10 +15,11 @@ int main(int argc, char *argv[])
   cout << "argc is " << argc << endl;
   int i, N;
   int *a;
+  /*
   for (i = 1; i < argc; i++)
   {
     cout << "argv[" << i << "]" << argv[i] << endl;
-  }
+  }*/
 
   /* Convert to numbers*/
   N = argc - 1;
